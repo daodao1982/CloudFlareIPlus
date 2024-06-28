@@ -14,8 +14,8 @@ speedlower=20  #自定义下载速度下限,单位为mb/s
 lossmax=0.75  #自定义丢包几率上限；只输出低于/等于指定丢包率的 IP，范围 0.00~1.00，0 过滤掉任何丢包的 IP
 speedqueue_max=2 #自定义测速IP冗余量
 
-telegramBotUserId="869871190" # telegram UserId
-telegramBotToken="7195311797:AAFDfJhYpSRGAVhgOlEFehDJfHewKVu9FDk" #telegram BotToken https://t.me/ACFST_DDNS_bot
+telegramBotUserId="1121190" # telegram UserId
+telegramBotToken="33222322:AAFDfJhYpSRGAVhgOlEFehDJfHew11111" #telegram BotToken https://t.me/ACFST_DDNS_bot
 telegramBotAPI="api.telegram.ssrc.cf" #telegram 推送API,留空将启用官方API接口:api.telegram.org
 ###############################################################以下脚本内容，勿动#######################################################################
 speedurl="https://cesu.820828.xyz" #官方测速链接
