@@ -18,7 +18,7 @@ telegramBotUserId="1121190" # telegram UserId
 telegramBotToken="33222322:AAFDfJhYpSRGAVhgOlEFehDJfHew11111" #telegram BotToken https://t.me/ACFST_DDNS_bot
 telegramBotAPI="api.telegram.ssrc.cf" #telegram 推送API,留空将启用官方API接口:api.telegram.org
 ###############################################################以下脚本内容，勿动#######################################################################
-speedurl="https://cesu.820828.xyz" #官方测速链接
+speedurl="https://ws.xyz" #官方测速链接
 proxygithub="https://mirror.ghproxy.com/" #反代github加速地址，如果不需要可以将引号内容删除，如需修改请确保/结尾 例如"https://mirror.ghproxy.com/"
 
 #带有地区参数，将赋值第1参数为地区
