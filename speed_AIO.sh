@@ -1,24 +1,24 @@
 #!/bin/bash
 # $ ./speed.sh us 443 4 xxxx.com xxxx@gmail.com xxxxxxxxxxxxxxx 
 export LANG=zh_CN.UTF-8
-auth_email="xxxx@gmail.com"    #你的CloudFlare注册账户邮箱 *必填
-auth_key="xxxxxxxxxxxxxxx"   #你的CloudFlare账户key,位置在域名概述页面点击右下角获取api key。*必填
-zone_name="xxxx.com"     #你的主域名 *必填
+auth_email="tuzi226@gmail.com"    #你的CloudFlare注册账户邮箱 *必填
+auth_key="68b114fd3ec7763945abb7005bd60030"   #你的CloudFlare账户key,位置在域名概述页面点击右下角获取api key。*必填
+zone_name="dfgr.eu.org"     #你的主域名 *必填
 
-area_GEC="yx"    #自动更新的二级域名前缀
-port=443 #自定义测速端口 不能为空!!!
-ips=4    #获取更新IP的指定数量，默认为4 
+area_GEC="cf"    #自动更新的二级域名前缀
+port=2053 #自定义测速端口 不能为空!!!
+ips=2    #获取更新IP的指定数量，默认为4 
 
-speedtestMB=90 #测速文件大小 单位MB，文件过大会拖延测试时长，过小会无法测出准确速度
-speedlower=10  #自定义下载速度下限,单位为mb/s
+speedtestMB=100 #测速文件大小 单位MB，文件过大会拖延测试时长，过小会无法测出准确速度
+speedlower=20  #自定义下载速度下限,单位为mb/s
 lossmax=0.75  #自定义丢包几率上限；只输出低于/等于指定丢包率的 IP，范围 0.00~1.00，0 过滤掉任何丢包的 IP
 speedqueue_max=2 #自定义测速IP冗余量
 
-telegramBotUserId="" # telegram UserId
-telegramBotToken="6599852032:AAHhetLKhXfAIjeXgCHpish1DK_NHo3BCrk" #telegram BotToken https://t.me/ACFST_DDNS_bot
+telegramBotUserId="869871190" # telegram UserId
+telegramBotToken="7195311797:AAFDfJhYpSRGAVhgOlEFehDJfHewKVu9FDk" #telegram BotToken https://t.me/ACFST_DDNS_bot
 telegramBotAPI="api.telegram.ssrc.cf" #telegram 推送API,留空将启用官方API接口:api.telegram.org
 ###############################################################以下脚本内容，勿动#######################################################################
-speedurl="https://speed.cloudflare.com/__down?bytes=$((speedtestMB * 1000000))" #官方测速链接
+speedurl="https://cesu.820828.xyz" #官方测速链接
 proxygithub="https://mirror.ghproxy.com/" #反代github加速地址，如果不需要可以将引号内容删除，如需修改请确保/结尾 例如"https://mirror.ghproxy.com/"
 
 #带有地区参数，将赋值第1参数为地区
