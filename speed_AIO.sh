@@ -1,9 +1,9 @@
 #!/bin/bash
 # $ ./speed.sh us 443 4 xxxx.com xxxx@gmail.com xxxxxxxxxxxxxxx 
 export LANG=zh_CN.UTF-8
-auth_email="tuzi226@gmail.com"    #你的CloudFlare注册账户邮箱 *必填
-auth_key="68b114fd3ec7763945abb7005bd60030"   #你的CloudFlare账户key,位置在域名概述页面点击右下角获取api key。*必填
-zone_name="dfgr.eu.org"     #你的主域名 *必填
+auth_email="tuzi@gmail.com"    #你的CloudFlare注册账户邮箱 *必填
+auth_key="11111117763945abb7005bd60030"   #你的CloudFlare账户key,位置在域名概述页面点击右下角获取api key。*必填
+zone_name="acbb.eu.org"     #你的主域名 *必填
 
 area_GEC="cf"    #自动更新的二级域名前缀
 port=2053 #自定义测速端口 不能为空!!!
